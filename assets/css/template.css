@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #a5d4cc;
+    text-shadow: 2px 2px 5px #6e4926;
+    justify-content: center;
+    font-size: 20px;
+}
+
+nav .active a, nav a:hover {
+    background-color: #a5d4cc;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px #6e4926;
+    border-radius: 25px;
+}
+
+#banner {
+    align-items: center;
+    background-image: url(/assets/images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+.container_headline {
+    flex-direction: column;
+}
+
+.banner_headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.banner_headline h1 {
+    font-size: 100px;
+    color: black;
+    text-shadow: 0px 0px 5px whitesmoke;
+    margin-left: -550px;
+    margin-top: 300px;
+    padding: 0;
+    max-width: 350px;
+    line-height: 80px;
+}
+
+.banner_headline h2 {
+    color: black;
+    text-shadow: 0px 0px 5px whitesmoke;
+    text-align: right;
+    margin-left: -60px;
+    padding: 0;
+    max-width: 350px;
+    line-height: 15px;
+}
+
+#geral {
+    background: linear-gradient(black, rgb(66, 66, 66), black);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.bio_title {    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bio_title h3 {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.bio_body {
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.bio_text{
+    color: #a5d4cc;
+    text-shadow: 2px 2px 5px #6e4926;
+    font-size: 1.15em /* clamp(.8em, .8em + 1vw, 1.2em) */;
+    text-align: justify;
+    flex: 3;
+    margin-right: 20px;
+    display: flex;
+    overflow: auto;
+    padding-right: 10px;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+}
+
+.bio_img,
+.bio_img img {
+    flex: 1;
+    width: 280px;
+}
+
+.bg_alternative {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.musical {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.musical_title {   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.musical_title h3 {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.musical_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.musical_text {
+    color: #a5d4cc;
+    text-shadow: 2px 2px 5px #6e4926;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 19px;
+    font-size: 20px;
+}
+
+.musical_text p {
+    font-weight: bold;
+}
+
+.disco_list {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 30px;
+}
+
+.disco_list p {
+    margin: 20px;
+    font-weight: bold;
+}
+
+.musical_img img {
+    float: left;
+    width: 230px;
+    margin-right: 10px;
+}
+
+.dead_img img {
+    float: right;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.disco_img img {
+    float: left;
+    width: 110px;
+    margin-left: 300px;
+}
+
+.dead_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.disco_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.disco_title h3 {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    margin: 50px;
+    border-bottom: 1px solid black;
+}
+
+.dead_title h3 {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    margin: 50px;
+    border-bottom: 1px solid black;
+}
+
+.footer_bg {
+    background: none #000;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    color: whitesmoke;
+    position: relative;
+}
+
+.tag {
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.sign {
+    text-align: center;
+    padding: 50px 0 0;
+}
+
+.sign_img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+.note {
+    margin: 10px auto 50px;
+    max-width: 95%;
+    border: 1px solid;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bold_up {
+    font-weight: bold;
+}
+
+.footer_site {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.footer_site:hover {
+    color: #a5d4cc;
+    text-decoration: none;
+}
+
+.ff {
+    text-align: right;
+    padding: 30px 20px;
+    opacity: 0.2;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .copy a {
+    text-decoration: none;
+    color: whitesmoke;
+ }
